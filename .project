@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>trading</name>
-	<comment>Project trading created by Buildship.</comment>
+	<comment>Project nimit-backend created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1599768763090</id>
+			<id>1600115175610</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

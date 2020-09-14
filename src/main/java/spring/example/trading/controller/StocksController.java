@@ -7,6 +7,7 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,7 @@ import spring.example.trading.entities.Stock;
 import spring.example.trading.service.StocksService;
 
 @RestController
+@CrossOrigin
 public class StocksController {
 
     @Autowired
@@ -57,7 +59,7 @@ public class StocksController {
       return new ResponseEntity<>("Product is deleted successsfully", HttpStatus.OK);
    }
 
-   @RequestMapping(value = "/stocks", method = RequestMethod.GET)
+   @RequestMapping(value = "/stocks/{ticker}", method = RequestMethod.GET)
    public List<Stock> findByTicker(@RequestParam("ticker") String ticker){
       return service.getStocksByTicker(ticker);
    }
