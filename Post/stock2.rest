@@ -1,0 +1,7 @@
+PUT http://localhost:8080/stocks/5f5bc4f670fcf2525ae6cb38 HTTP/1.1
+content-type: application/json
+
+{
+    "_id" : "5f5bc4f670fcf2525ae6cb38",
+    "price":"10"
+}
