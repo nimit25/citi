@@ -59,7 +59,7 @@ public class StocksController {
       return new ResponseEntity<>("Product is deleted successsfully", HttpStatus.OK);
    }
 
-   @RequestMapping(value = "/stocks/{ticker}", method = RequestMethod.GET)
+   @RequestMapping(value = "/stocks", method = RequestMethod.GET)
    public List<Stock> findByTicker(@RequestParam("ticker") String ticker){
       return service.getStocksByTicker(ticker);
    }
